@@ -103,8 +103,8 @@ h1 {
 }
 @media (min-width: 800px) {
     h1 {
-        /* = 70px */
-        font-size: 7rem;
+        /* = 0px */
+        font-size: 5.5rem;
         line-height: 1;
     }
 }
@@ -121,8 +121,8 @@ h2 {
 }
 @media (min-width: 800px) {
     h2 {
-        /* = 36px */
-        font-size: 7rem;
+        /* = 550px */
+        font-size: 4.5rem;
         line-height: 1;
     }
 }
@@ -139,8 +139,8 @@ h3 {
 }
 @media (min-width: 800px) {
     h3 {
-        /* = 36px */
-        font-size: 4rem;
+        /* = 25px */
+        font-size: 2.5rem;
         line-height: 1;
     }
 }
@@ -150,10 +150,10 @@ h3 {
 
 .commentaires{
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-template-rows: repeat(6, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
     grid-gap: 2rem;
-    padding: 2rem;
+    padding: 1rem 12rem 1rem 12rem;
     grid-template-areas: 
     "G A A D"
     "G A A D"
@@ -164,7 +164,7 @@ h3 {
 }
 
 .commentaires__item{
-    padding: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
     border-radius: 10px;
 }
 
@@ -191,6 +191,13 @@ h3 {
 .zone_C{
     grid-area: C;
     background-color: #fecc6a;
+
+    /* Image */
+    background-image: url("../images/illustration-consistent-schedule.webp");
+    background-size: 70%;
+    background-repeat: no-repeat, repeat;
+    background-position-x: 35%;
+     background-position-y: 250%;
 }
 
 .zone_D{
@@ -203,24 +210,14 @@ h3 {
     background-color: #7551db;
     color: white;
 
-    /* text-align: right; */
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-
-
-    /* Image */
-    /* background-image: url("../images/illustration-grow-followers.webp");
-    background-size: 40%;
-    background-repeat: no-repeat, repeat;
-    background-position-x: 10%;
-    background-position-y: center; */
 }
-
 .img__zone_E{
-    width: 100%;
+    width: 80%;
+    margin-right: 2rem;
 }
 
 .zone_F{
@@ -236,4 +233,12 @@ h3 {
 .zone_H{
     grid-area: H;
     background-color: #fecc6a;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.jaune{
+    color: #fecc6a;
 }

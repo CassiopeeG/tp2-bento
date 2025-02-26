@@ -93,7 +93,7 @@ h4{
 /* AJUSTER LES VALEURS SELON VOTRE PROJET */
 h1 {
     /* = 24px */
-    font-size: 2.4rem;
+    font-size: 3.8rem;
 }
 @media (min-width: 600px) {
     h1 {
@@ -148,32 +148,104 @@ h3 {
 /* Grille de mise en page
    ========================================================================== */
 
-.commentaires{
+
+/* STYLES POUR MOBILE */
+
+   .commentaires{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-gap: 2rem;
-    padding: 1rem 12rem 1rem 12rem;
-    grid-template-areas: 
-    "G A A D"
-    "G A A D"
-    "G B C D"
-    "H B C D"
-    "H F E E"
-    "H F E E";
+    grid-template-columns: 1fr;
 }
 
 .commentaires__item{
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .zone_A{
-    grid-area: A;
+    color: white;
+    text-align: center;
+    background-color: #7551db;
+
+    /* Image */
+    background-image: url("../images/illustration-five-stars.webp");
+    background-size: 50%;
+    background-repeat: no-repeat, repeat;
+    background-position-x: 50%;
+    background-position-y: 80%;
+}
+
+.zone_B{
+    background-color: white;
+}
+
+.zone_C{
+    background-color: #fecc6a;
+    min-height: 22rem;
+
+    /* Image */
+    background-image: url("../images/illustration-consistent-schedule.webp");
+    background-size: 70%;
+    background-repeat: no-repeat, repeat;
+    background-position-x: 10%;
+     background-position-y: 150%;
+}
+
+.zone_D{
+    background-color: #b6a7dd;
+}
+
+.zone_E{
+    background-color: #7551db;
     color: white;
 
     text-align: center;
-    background-color: #7551db;
+}
+.img__zone_E{
+    width: 80%;
+    margin-left: 20px;
+}
+
+.zone_F{
+    background-color: white;
+}
+
+.zone_G{
+    background-color: antiquewhite;
+}
+.img__zone_G{
+    width: 70%;
+}
+
+.zone_H{
+    background-color: #fecc6a;
+}
+
+
+/* STYLES POUR >600 px */
+
+@media(width > 600px){
+    .commentaires{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-gap: 2rem;
+        padding: 0rem 12rem 0rem 12rem;
+        grid-template-areas: 
+        "G A A D"
+        "G A A D"
+        "G B C D"
+        "H B C D"
+        "H F E E"
+        "H F E E";
+    }
+
+    .commentaires__item{
+        padding: 0rem 2rem 0rem 2rem;
+        margin-bottom: 0;
+    }
+
+.zone_A{
+    grid-area: A;
 
     /* Image */
     background-image: url("../images/illustration-five-stars.webp");
@@ -185,55 +257,55 @@ h3 {
 
 .zone_B{
     grid-area: B;
-    background-color: white;
 }
 
 .zone_C{
     grid-area: C;
-    background-color: #fecc6a;
 
     /* Image */
     background-image: url("../images/illustration-consistent-schedule.webp");
     background-size: 70%;
     background-repeat: no-repeat, repeat;
     background-position-x: 35%;
-     background-position-y: 250%;
+     background-position-y: 180%;
 }
 
 .zone_D{
     grid-area: D;
-    background-color: #b6a7dd;
 }
 
 .zone_E{
     grid-area: E;
-    background-color: #7551db;
-    color: white;
 
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 .img__zone_E{
-    width: 80%;
-    margin-right: 2rem;
+    width: 50%;
+    margin-left: 0px;
 }
 
 .zone_F{
     grid-area: F;
-    background-color: white;
+}
+.img__zone_F{
+    width: 80%;
 }
 
 .zone_G{
     grid-area: G;
-    background-color: antiquewhite;
 }
 
 .zone_H{
     grid-area: H;
-    background-color: #fecc6a;
 }
+.img__zone_H{
+    width: 80%;
+}
+}
+
+/* STYLES POUR TEXTES SPÉCIAUX */
 
 .italique{
     font-style: italic;
@@ -241,4 +313,8 @@ h3 {
 
 .jaune{
     color: #fecc6a;
+}
+
+.mauve{
+    color: #b6a7dd;
 }

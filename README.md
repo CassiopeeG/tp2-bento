@@ -1,6 +1,6 @@
-# Frontend Mentor - Solution Grille Bento
+## Accéder au lien
 
-Il s'agit d'une solution pour le [défi Grille Bento sur Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj). Les défis de Frontend Mentor vous aident à améliorer vos compétences en codage en construisant des projets réalistes.
+Cliquez ici pour accéder au produit final: [Index.html](index.html)
 
 ## Table des matières
 

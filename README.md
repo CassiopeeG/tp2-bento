@@ -1,6 +1,6 @@
 ## Accéder au lien
 
-Cliquez ici pour accéder au produit final: [Index.html](index.html)
+[Cliquez ici pour accéder au produit final](https://cassiopeeg.github.io/tp2-bento/)
 
 ## Table des matières
 
